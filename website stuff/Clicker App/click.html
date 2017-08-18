@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+		<title>Click!</title>
+		
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src = "main.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+
+	<style>
+		.whole {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			justify-content: space-between;
+			justify-content: space-around;
+			align-items: center;
+		}
+	</style>
+
+	<body>
+		<h2>Tim's Clicker Game</h2>
+		<div class = 'whole' ng-app = "mainApp" ng-controller = "clickerController">
+				<div class = 'clicker'><button ng-click = "click()">Click Me!</button></div>
+				<div class = 'counter'><p>Total click: {{clickCounter}}</p></div>
+		</div>
+
+	</body>
+</html>
